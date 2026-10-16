@@ -1,8 +1,7 @@
 
 name: Model CI/CD
 
-on:
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 
 jobs:
   model-ci:
