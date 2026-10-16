@@ -40,3 +40,13 @@ jobs:
 
       - name: Mostrar métricas
         run: cat outputs/train/metrics/train_test_metrics.csv
+
+  model-cd:
+    needs: model-ci
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Desplegar modelo
+        run: echo "Desplegando el modelo de riesgo en AWS... (simulado)"
+
+
