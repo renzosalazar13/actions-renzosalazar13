@@ -32,7 +32,7 @@ jobs:
         run: python src/3-prepare-dataset-test.py
 
       - name: Entrenar y evaluar modelos
-        run: python src/4-train-model.py
+        run: python src/4-train-evaluate-models.py
 
       - name: Seleccionar mejor modelo
         run: python src/5-select-best-model.py
